@@ -26,13 +26,13 @@ import { translations } from "./translations";
 const toolkit = [
   {
     icon: BarChart3,
-    title: "Business Intelligence",
-    tools: "Power BI · DAX · KPI Design · Reporting"
+    title: "Machine Learning",
+    tools: "Python · Scikit-learn · XGBoost · MLflow"
   },
   {
     icon: Database,
-    title: "Data Analytics",
-    tools: "SQL · PostgreSQL · Pandas · Excel"
+    title: "Generative AI & RAG",
+    tools: "RAG · FAISS · Mistral · FastAPI"
   },
   {
     icon: Target,
@@ -51,8 +51,8 @@ const experiences = [
   {
     period: "Jul 2026 — Aug 2026",
     company: "Talan",
-    role: "Data Analytics & Generative AI Intern",
-    subtitle: "Health analytics · Fraud detection · Decision support",
+    role: "Data Science & Generative AI Intern",
+    subtitle: "Machine Learning · GenAI · RAG · Fraud Detection",
 
     description:
       "Contributed to SANTAID, a health-insurance intelligence platform combining analytical indicators, fraud detection, anomaly analysis and AI-assisted investigation.",
@@ -189,7 +189,7 @@ function App() {
             </strong>
 
             <small>
-              BI · Data Analytics · Applied AI
+              AI · Data Science · Generative AI
             </small>
 
           </span>
@@ -350,12 +350,12 @@ function App() {
 
             <div className="hero-stack">
 
-              <span>Power BI</span>
-              <span>DAX</span>
-              <span>SQL</span>
-              <span>PostgreSQL</span>
               <span>Python</span>
-              <span>Applied AI</span>
+              <span>Machine Learning</span>
+              <span>Generative AI</span>
+              <span>RAG</span>
+              <span>LLMs</span>
+              <span>MLOps</span>
 
             </div>
 
@@ -731,7 +731,7 @@ function App() {
                   </small>
 
                   <strong>
-                    Business Intelligence · Data Analytics · SQL
+                    Python · Data Analytics · Data Processing
                   </strong>
 
                 </div>
@@ -780,13 +780,13 @@ function App() {
 
               <div className="education-tags">
 
-                <span>Power BI</span>
+                <span>Machine Learning</span>
                 <span>SQL</span>
                 <span>Python</span>
-                <span>Machine Learning</span>
                 <span>Data Analytics</span>
                 <span>ETL</span>
-                <span>AI</span>
+                <span>Generative AI</span>
+                <span>RAG</span>
 
               </div>
 
@@ -865,12 +865,12 @@ function App() {
 
               <div className="opportunity-tags">
 
-                <span>Business Intelligence</span>
-                <span>Data Analytics</span>
-                <span>Power BI</span>
-                <span>SQL</span>
-                <span>Reporting</span>
-                <span>Applied AI</span>
+                <span>Artificial Intelligence</span>
+                <span>Data Science</span>
+                <span>Machine Learning</span>
+                <span>Generative AI</span>
+                <span>RAG</span>
+                <span>MLOps</span>
 
               </div>
 

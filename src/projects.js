@@ -1,117 +1,114 @@
 export const projects = [
   {
-    id: "churn",
+    id: "santaid",
 
     eyebrow:
-      "BUSINESS INTELLIGENCE · CUSTOMER ANALYTICS · ML",
+      "GENERATIVE AI · MACHINE LEARNING · FRAUD DETECTION",
 
     title:
-      "Customer Churn Analytics & Prediction Platform",
+      "SANTAID — GenAI, RAG & Fraud Detection",
 
     video:
-      "/videos/churn-demo.mp4",
+      "/videos/demo_santaid.mp4",
 
     summary:
-      "End-to-end customer retention intelligence platform combining Power BI, PostgreSQL, interactive analytics and Machine Learning to identify churn patterns and support better retention decisions.",
+      "Intelligent healthcare platform combining generative AI, RAG and Machine Learning to support insured users and help insurers identify high-risk claims.",
 
     keyPoints: [
-      "Role-based dashboards for Management, Marketing, Technical Support and Data teams",
-      "Churn KPIs, segmentation, revenue-at-risk analysis and service-related insights",
-      "Customer-level churn probability, risk level and contextual risk factors"
+      "RAG assistant using FAISS and Mistral for reimbursement questions",
+      "Healthcare reimbursement assistance, simulation and OCR/document processing",
+      "Fraud detection using supervised Machine Learning, anomaly detection and graph analysis"
     ],
 
     overview:
-      "The objective of this project was to transform telecom customer data into a complete decision-support solution for customer retention. Instead of focusing only on prediction, the platform combines descriptive analytics, business segmentation and Machine Learning.",
+      "SANTAID is an intelligent healthcare solution developed during Talan SummerCamp 2026. It addresses both insured-user assistance and insurer-side fraud detection through document retrieval, generative AI, Machine Learning, anomaly detection, business rules and graph analysis.",
 
     solution:
-      "I structured the analytical data layer using PostgreSQL, created dedicated Power BI dashboards for different business roles and developed a web application with role-based access. A Gradient Boosting model was integrated to generate individual churn probabilities and risk levels.",
+      "For insured users, SANTAID provides a RAG-based assistant using a FAISS knowledge base of approximately 50,900 document chunks and a Mistral language model. For insurers, it combines supervised learning, anomaly detection, 14 business fraud rules and graph-based analysis to identify suspicious healthcare claims and prioritize investigations.",
 
     businessValue:
-      "Managers can monitor customer retention globally, Marketing teams can identify vulnerable segments, Technical Support can analyze service-related churn factors, and Data users can evaluate the model and generate customer-level predictions.",
+      "The solution improves access to reimbursement information for insured users while helping insurers prioritize suspicious claims and optimize fraud investigation efforts.",
 
     highlights: [
-      "Analyzed 7,043 telecom customers",
-      "Created dedicated dashboards for Manager, Marketing, Technical Support and Model Performance",
-      "Built KPIs for churn rate, retained customers, monthly charges and revenue at risk",
-      "Implemented interactive segmentation by contract, payment method, internet service and customer characteristics",
-      "Added role-based access control in the web application",
-      "Integrated Gradient Boosting for customer-level churn prediction",
-      "Evaluated the model using ROC-AUC, recall, confusion matrix and feature importance"
+      "RAG assistant using FAISS and Mistral",
+      "Approximately 50,900 indexed document chunks",
+      "Healthcare reimbursement assistance and simulation",
+      "OCR/document processing support",
+      "Fraud detection using supervised Machine Learning and anomaly detection",
+      "14 business fraud rules",
+      "Graph analysis with approximately 26,000 entities and 826,000 relationships",
+      "FastAPI backend services"
     ],
 
     tech: [
-      "Power BI",
-      "DAX",
-      "PostgreSQL",
-      "SQL",
       "Python",
-      "Pandas",
-      "Scikit-learn",
-      "Streamlit",
-      "Plotly"
+      "FastAPI",
+      "FAISS",
+      "Mistral",
+      "RAG",
+      "XGBoost"
     ],
 
     metrics: [
-      ["7,043", "Customers"],
-      ["26.5%", "Churn Rate"],
-      ["84.3%", "ROC-AUC"],
-      ["69.8%", "Recall"]
+      ["0.995", "ROC-AUC"],
+      ["0.898", "Average Precision"],
+      ["98.6%", "Recall"],
+      ["8%", "Investigation Budget"]
     ]
   },
 
   {
-    id: "restaurant",
+    id: "cancer",
 
     eyebrow:
-      "POWER BI · DASHBOARDING · ANALYTICS",
+      "PREDICTIVE ANALYTICS · EXPLAINABLE AI",
 
     title:
-      "Restaurant Rating Analytics Dashboard",
+      "Breast Cancer Prediction Platform",
 
     video:
-      "/videos/restaurant-bi.mp4",
+      "/videos/breast-cancer-demo.mp4",
 
     summary:
-      "Business Intelligence solution designed to analyze restaurant performance, customer satisfaction, service quality, customer profiles and rating patterns through interactive Power BI dashboards.",
+      "Explainable predictive analytics platform combining Machine Learning, model comparison, SHAP explainability and an interactive web interface.",
 
     keyPoints: [
-      "5 dashboards covering Management, Quality, Marketing, Customer and ML analysis",
-      "DAX KPIs for satisfaction, service quality and positive or negative feedback",
-      "Customer segmentation and Python-based analytical exploration"
+      "Comparison of multiple Machine Learning classification models",
+      "SHAP explanations for transparent prediction interpretation",
+      "FastAPI backend connected to an interactive Next.js frontend"
     ],
 
     overview:
-      "The project transforms restaurant and customer data into decision-oriented dashboards adapted to different business needs.",
+      "The objective was to create a complete predictive analytics application where the model result is accompanied by understandable explanations.",
 
     solution:
-      "I created several Power BI dashboards with interactive filters, DAX measures and customer segmentation. Python analytics were used as an additional layer for deeper analysis of rating-related variables.",
+      "Several Machine Learning models were compared and evaluated. Explainability was added with SHAP, while FastAPI exposes the prediction service to an interactive Next.js frontend.",
 
     businessValue:
-      "The dashboards help identify satisfaction drivers, compare restaurant performance and understand customer preferences for better marketing and quality decisions.",
+      "The project demonstrates how Machine Learning can support decision-making while remaining interpretable and accessible to users.",
 
     highlights: [
-      "Built five business-oriented dashboards",
-      "Created DAX measures for satisfaction and service-quality indicators",
-      "Analyzed customer behavior according to demographics, budget and preferences",
-      "Used interactive filtering and segmentation",
-      "Integrated Python visuals using Pandas and Scikit-learn"
+      "Compared Logistic Regression, SVM, Random Forest, MLP and XGBoost",
+      "Integrated SHAP for global and individual explanations",
+      "Created a FastAPI inference API",
+      "Developed an interactive Next.js interface",
+      "Structured the project using an end-to-end analytical workflow"
     ],
 
     tech: [
-      "Power BI",
-      "DAX",
-      "Power Query",
       "Python",
-      "Pandas",
       "Scikit-learn",
-      "Excel"
+      "XGBoost",
+      "SHAP",
+      "FastAPI",
+      "Next.js"
     ],
 
     metrics: [
-      ["5", "Dashboards"],
-      ["DAX", "KPI Layer"],
-      ["Python", "Analytics"],
-      ["BI", "Decision Support"]
+      ["5", "Models"],
+      ["SHAP", "Explainability"],
+      ["FastAPI", "Backend"],
+      ["XAI", "Interpretation"]
     ]
   },
 
@@ -175,57 +172,58 @@ export const projects = [
   },
 
   {
-    id: "cancer",
+    id: "churn",
 
     eyebrow:
-      "PREDICTIVE ANALYTICS · EXPLAINABLE AI",
+      "MACHINE LEARNING · PREDICTIVE ANALYTICS · CUSTOMER DATA",
 
     title:
-      "Breast Cancer Prediction Platform",
+      "Customer Churn Analytics & Prediction Platform",
 
     video:
-      "/videos/breast-cancer-demo.mp4",
+      "/videos/churn-demo.mp4",
 
     summary:
-      "Explainable predictive analytics platform combining Machine Learning, model comparison, SHAP explainability and an interactive web interface.",
+      "Customer retention intelligence platform combining Machine Learning, customer-level churn prediction and analytical data processing to identify risk patterns.",
 
     keyPoints: [
-      "Comparison of multiple Machine Learning classification models",
-      "SHAP explanations for transparent prediction interpretation",
-      "FastAPI backend connected to an interactive Next.js frontend"
+      "Customer-level churn probability, risk level and contextual risk factors",
+      "Gradient Boosting model for customer retention prediction",
+      "Segmentation and analytical exploration of customer behavior"
     ],
 
     overview:
-      "The objective was to create a complete predictive analytics application where the model result is accompanied by understandable explanations.",
+      "The objective was to transform telecom customer data into a predictive analytics solution for customer retention. The platform combines descriptive analysis, business segmentation and Machine Learning to identify customers at risk of churn.",
 
     solution:
-      "Several Machine Learning models were compared and evaluated. Explainability was added with SHAP, while FastAPI exposes the prediction service to an interactive Next.js frontend.",
+      "I structured the analytical data layer using PostgreSQL, prepared customer features and integrated a Gradient Boosting model into a web application with role-based access. The model generates individual churn probabilities and risk levels for further analysis.",
 
     businessValue:
-      "The project demonstrates how Machine Learning can support decision-making while remaining interpretable and accessible to users.",
+      "The solution helps teams identify vulnerable customer segments, understand service-related churn factors and prioritize retention actions using customer-level predictions.",
 
     highlights: [
-      "Compared Logistic Regression, SVM, Random Forest, MLP and XGBoost",
-      "Integrated SHAP for global and individual explanations",
-      "Created a FastAPI inference API",
-      "Developed an interactive Next.js interface",
-      "Structured the project using an end-to-end analytical workflow"
+      "Analyzed 7,043 telecom customers",
+      "Integrated Gradient Boosting for customer-level churn prediction",
+      "Evaluated the model using ROC-AUC, recall, confusion matrix and feature importance",
+      "Implemented interactive segmentation by contract, payment method, internet service and customer characteristics",
+      "Built analytical dashboards for monitoring customer retention and model performance",
+      "Added role-based access control in the web application"
     ],
 
     tech: [
       "Python",
+      "PostgreSQL",
+      "SQL",
       "Scikit-learn",
-      "XGBoost",
-      "SHAP",
-      "FastAPI",
-      "Next.js"
+      "Streamlit",
+      "Plotly"
     ],
 
     metrics: [
-      ["5", "Models"],
-      ["SHAP", "Explainability"],
-      ["FastAPI", "Backend"],
-      ["XAI", "Interpretation"]
+      ["7,043", "Customers"],
+      ["26.5%", "Churn Rate"],
+      ["84.3%", "ROC-AUC"],
+      ["69.8%", "Recall"]
     ]
   }
 ];

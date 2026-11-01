@@ -53,7 +53,6 @@ public/videos/
 Use these exact names or edit `src/projects.js`:
 
 - `churn-demo.mp4`
-- `restaurant-bi.mp4`
 - `firmaa-demo.mp4`
 - `breast-cancer-demo.mp4`
 
