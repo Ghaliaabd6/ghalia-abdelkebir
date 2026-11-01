@@ -1,5 +1,5 @@
 export const profile = {
-  email: "abdeghalia04@gmail.com",
+  email: "ghalia.abdelkebir@esprit.tn",
 
   linkedin:
     "https://www.linkedin.com/in/ghalia-abdelkebir/",
