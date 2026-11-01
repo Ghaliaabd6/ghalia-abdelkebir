@@ -11,5 +11,5 @@ export const profile = {
     "+21600000000",
 
   cv:
-    "/cv/Ghalia_Abdelkebir_CV_BI_DataAnalytics.pdf"
+    "/cv/Ghalia_Abdelkebir_CV_AI_DataScience.pdf"
 };

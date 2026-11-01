@@ -334,6 +334,7 @@ function App() {
 
               <a
                 href={profile.cv}
+                download="Ghalia_Abdelkebir_CV_AI_DataScience.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="secondary-btn"
