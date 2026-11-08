@@ -175,7 +175,7 @@ export const projects = [
     id: "churn",
 
     eyebrow:
-      "MACHINE LEARNING · PREDICTIVE ANALYTICS · CUSTOMER DATA",
+      "BUSINESS INTELLIGENCE · DATA ANALYTICS · MACHINE LEARNING",
 
     title:
       "Customer Churn Analytics & Prediction Platform",
@@ -211,7 +211,8 @@ export const projects = [
     ],
 
     tech: [
-      "Python",
+      "Power BI",
+      "Data Analytics",
       "PostgreSQL",
       "SQL",
       "Scikit-learn",
