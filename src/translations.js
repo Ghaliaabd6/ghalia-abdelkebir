@@ -142,6 +142,17 @@ export const translations = {
     },
     footer: "Artificial Intelligence · Data Science · Generative AI",
     projectContent: {
+      "mlops-churn": {
+        eyebrow: "MLOPS · MACHINE LEARNING · DÉPLOIEMENT",
+        title: "Plateforme MLOps de prédiction du churn",
+        summary: "Pipeline MLOps de bout en bout pour la prédiction du churn client, intégrant Machine Learning, suivi des expérimentations, déploiement d’API, conteneurisation et monitoring.",
+        keyPoints: ["Prédiction du churn avec XGBoost et pipelines de prétraitement reproductibles", "Suivi des expérimentations et gestion des versions des modèles avec MLflow", "Déploiement du modèle via FastAPI et Docker avec suivi opérationnel"],
+        overview: "Développement d’un pipeline MLOps de bout en bout pour la prédiction du churn client, intégrant le Machine Learning, le suivi des expériences, le déploiement d’API, la conteneurisation et le monitoring afin d’assurer la reproductibilité et la maintenabilité.",
+        solution: "Le workflow couvre le prétraitement des données, l’entraînement XGBoost, le suivi des expériences avec MLflow, le versioning du modèle, l’inférence via FastAPI, le déploiement Docker et le monitoring de l’application.",
+        businessValue: "Le projet démontre le cycle de vie complet d’un modèle de Machine Learning, de l’expérimentation au déploiement, grâce à des pipelines reproductibles et un monitoring orienté production.",
+        highlights: ["Prédiction du churn avec un modèle XGBoost", "Pipelines de prétraitement et de feature engineering avec Python et Scikit-learn", "Suivi des expérimentations, comparaison et versioning des modèles avec MLflow", "Déploiement du modèle via une API REST FastAPI et Docker", "Analyse statique et contrôle qualité du code avec SonarQube", "Mise en place du logging et du monitoring pour la fiabilité opérationnelle"],
+        metrics: [["E2E", "Cycle ML"], ["MLflow", "Suivi des expériences"], ["FastAPI", "Inférence"], ["Docker", "Déploiement"]]
+      },
       churn: {
         eyebrow: "MACHINE LEARNING · ANALYSE PRÉDICTIVE · DONNÉES CLIENT",
         title: "Plateforme d’analyse et de prédiction du churn client",

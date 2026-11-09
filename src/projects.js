@@ -226,5 +226,60 @@ export const projects = [
       ["84.3%", "ROC-AUC"],
       ["69.8%", "Recall"]
     ]
+  },
+
+  {
+    id: "mlops-churn",
+
+    eyebrow:
+      "MLOPS · MACHINE LEARNING · DEPLOYMENT",
+
+    title:
+      "MLOps — Customer Churn Prediction",
+
+    summary:
+      "End-to-end MLOps pipeline for customer churn prediction, integrating machine learning, experiment tracking, API deployment, containerization and monitoring.",
+
+    keyPoints: [
+      "XGBoost churn prediction with reproducible preprocessing pipelines",
+      "Experiment tracking and model version management with MLflow",
+      "FastAPI and Docker deployment with operational monitoring"
+    ],
+
+    overview:
+      "Developed an end-to-end MLOps pipeline for customer churn prediction, integrating machine learning, experiment tracking, API deployment, containerization and monitoring to ensure reproducibility and maintainability.",
+
+    solution:
+      "The workflow covers data preprocessing, XGBoost training, MLflow experiment tracking, model versioning, FastAPI inference, Docker deployment and application monitoring.",
+
+    businessValue:
+      "The project demonstrates the complete lifecycle of a machine learning model, from experimentation to deployment, through reproducible pipelines and production-oriented monitoring.",
+
+    highlights: [
+      "Developed an XGBoost classification model for churn prediction",
+      "Implemented preprocessing and feature engineering with Python and Scikit-learn",
+      "Integrated MLflow for experiment tracking, model comparison and version management",
+      "Developed a REST API with FastAPI for real-time churn predictions",
+      "Containerized the application with Docker for consistent deployment",
+      "Static analysis and code quality control with SonarQube",
+      "Implemented application logging and monitoring for operational reliability"
+    ],
+
+    tech: [
+      "Python",
+      "XGBoost",
+      "Scikit-learn",
+      "MLflow",
+      "FastAPI",
+      "Docker",
+      "SonarQube"
+    ],
+
+    metrics: [
+      ["E2E", "ML Lifecycle"],
+      ["MLflow", "Experiment Tracking"],
+      ["FastAPI", "Inference"],
+      ["Docker", "Deployment"]
+    ]
   }
 ];

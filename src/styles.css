@@ -756,6 +756,11 @@ a {
   transition: 0.25s ease;
 }
 
+.project-card-mlops-churn {
+  min-height: 405px;
+  align-self: start;
+}
+
 .project-card:hover,
 .project-card.active {
   transform: translateY(-5px);

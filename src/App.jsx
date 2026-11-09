@@ -1029,7 +1029,7 @@ function ProjectCard({
   return (
 
     <article
-      className={`project-card project-card-${index + 1} ${
+      className={`project-card project-card-${index + 1} project-card-${project.id} ${
         isActive
           ? "active"
           : ""
@@ -1038,13 +1038,14 @@ function ProjectCard({
       onMouseLeave={previewStop}
     >
 
-      <button
-        type="button"
-        className="project-video-preview"
-        onClick={() =>
-          openDemo(project)
-        }
-      >
+      {project.video && (
+        <button
+          type="button"
+          className="project-video-preview"
+          onClick={() =>
+            openDemo(project)
+          }
+        >
 
         <video
           ref={videoRef}
@@ -1077,7 +1078,8 @@ function ProjectCard({
 
         </div>
 
-      </button>
+        </button>
+      )}
 
 
       <div className="project-top">
@@ -1121,7 +1123,7 @@ function ProjectCard({
       <div className="project-tech">
 
         {(project.tech || [])
-          .slice(0, 6)
+          .slice(0, project.id === "mlops-churn" ? 7 : 6)
           .map(
             (technology) => (
 
@@ -1137,13 +1139,14 @@ function ProjectCard({
 
       <div className="project-actions">
 
-        <button
-          type="button"
-          className="demo-button"
-          onClick={() =>
-            openDemo(project)
-          }
-        >
+        {project.video && (
+          <button
+            type="button"
+            className="demo-button"
+            onClick={() =>
+              openDemo(project)
+            }
+          >
 
           <Play
             size={13}
@@ -1152,7 +1155,8 @@ function ProjectCard({
 
           {labels.watchDemo}
 
-        </button>
+          </button>
+        )}
 
 
         <button
@@ -1291,13 +1295,14 @@ function ProjectDetails({
         </div>
 
 
-        <button
-          type="button"
-          className="video-button"
-          onClick={() =>
-            openDemo(project)
-          }
-        >
+        {project.video && (
+          <button
+            type="button"
+            className="video-button"
+            onClick={() =>
+              openDemo(project)
+            }
+          >
 
           <Play
             size={14}
@@ -1306,7 +1311,8 @@ function ProjectDetails({
 
           {labels.videoDemo}
 
-        </button>
+          </button>
+        )}
 
       </div>
 
