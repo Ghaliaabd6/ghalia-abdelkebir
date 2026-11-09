@@ -155,7 +155,7 @@ export const projects = [
     tech: [
       "Python",
       "FastAPI",
-      "Next.js",
+      "Angular",
       "Flutter",
       "MongoDB Atlas",
       "TensorFlow",
